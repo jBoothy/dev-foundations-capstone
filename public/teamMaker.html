@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Team Generator | Team Creator</title>
+    <link rel="stylesheet" href="teamMaker.css">
+</head>
+<body>
+    <header>
+        <h1>
+            NBA Basketball Team Generator
+            <a href="https://www.nba.com" target="_blank">
+                <img id="nbaLogo" src="https://pluspng.com/img-png/nba-logo-vector-png-nba-logo-png-2400.png">
+            </a>
+            <section class="navBar">
+                <div>
+                    <a class="navBar" id="navBtns" href="http://127.0.0.1:5501/public/landing.html">Home</a>
+                    <button class="navBar" id="navBtns">Give me a random team!</button>
+                </div>
+            </section>
+        </h1>
+    </header>
+    <section>
+        <h3>
+            Add your own team below!
+        </h3>
+        <br>
+        <form>
+            <h4>Add your team name</h4>
+            <input id="teamName" type="text" placeholder="Team Name">
+            <br><br>
+            <h4>Add the city or state</h4>
+            <input id="cityState" type="text" placeholder="City or State">
+            <br><br>
+            <h4>Add a logo for your team (URL)</h4>
+            <input id="logoURL" type="text" placeholder="Logo URL">
+            <br><br>
+            <input type="submit">
+        </form>
+    </section>
+    <section id="team-container"></section>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/server/index.js"></script>
+</body>
+</html>
