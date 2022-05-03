@@ -64,10 +64,10 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
       document.getElementById("button").onclick = function () {
-        axios.get("http://localhost:5151/api/teams").then(function (response) {
+        axios.get("http://localhost:5151/api/teams").then(function(response) {
             const data = response.data;
-            document.getElementById("randomTeamCard").innerHTML = data.map(function(team) {
-                return '<li class="row">' + randomTeam;
+            document.getElementById("randomTeamCard").innerHTML = [data].map(function(team) {
+                return '<li class="row">' + randomTeam; // random team is not defined
               })
               .join("");
           }).catch(function (err) {
