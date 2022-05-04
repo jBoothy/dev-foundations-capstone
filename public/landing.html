@@ -56,7 +56,6 @@
                         </li>
                       </ul>
                     <a class="navBar" id="navBtns" href="http://127.0.0.1:5501/public/teamMaker.html">Make Your Own Team</a>
-                    <button id="button">Give me a random team!</button>
                 </div>
               
             <a href="https://www.github.com" target="_blank">
@@ -71,7 +70,10 @@
       </p>
     </main>
     <main>
-    <ul id="randomTeamCard" class="">Click "Give me a random team!" to find your new team!</ul>
+    <ul id="randomTeamCard" class="">
+      <button id="button">Click here to get a random team!</button>
+    </ul>
+    
     <script>
       document.getElementById("button").onclick = function () {
         axios.get("http://localhost:5151/api/teams").then(function(response) {
