@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NBA Team Generator | Team Creator</title>
-    <link rel="stylesheet" href="teamMaker.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -14,20 +14,25 @@
             <a href="https://www.nba.com" target="_blank">
                 <img id="nbaLogo" src="https://pluspng.com/img-png/nba-logo-vector-png-nba-logo-png-2400.png">
             </a>
-            <section class="navBar">
+            <nav class="navBar">
                 <div>
                     <a class="navBar" id="navBtns" href="http://127.0.0.1:5501/public/landing.html">Home</a>
-                    <button class="navBar" id="navBtns">Give me a random team!</button>
+                    <!-- Login Button if enough time -->
+                    <!-- <button id="navBtns">Login</button> -->
                 </div>
-            </section>
+            
+            <a href="https://www.github.com" target="_blank">
+                <img id="gitHub" src="https://www.shareicon.net/data/128x128/2017/06/22/887590_logo_512x512.png"/>
+              </a>
+            </nav>
         </h1>
     </header>
-    <section>
-        <h3>
+    <main>
+        <h3 id="addTeamP">
             Add your own team below!
         </h3>
         <br>
-        <form>
+        <form id="createTeam">
             <h4>Add your team name</h4>
             <input id="teamName" type="text" placeholder="Team Name">
             <br><br>
@@ -39,8 +44,12 @@
             <br><br>
             <input type="submit">
         </form>
-    </section>
+    </main>
     <section id="team-container"></section>
+
+    <footer>
+        
+    </footer>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/server/index.js"></script>
