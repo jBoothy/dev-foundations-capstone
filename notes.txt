@@ -1,5 +1,0 @@
-Notes for next steps:
-
-Start table for teams being added in.
-
-Get functionality working for adding in teams.

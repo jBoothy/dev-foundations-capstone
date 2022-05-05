@@ -1,0 +1,117 @@
+Overview
+Today you’ll start building a solo project! You’ll have about the next week and a half to work on this. The time is roughly equivalent to 6 lab exercises, so keep that in mind when you’re figuring out the scope of your project.
+
+Basic Requirements
+Planning documentation
+
+Needs to have an interactive front end (inputs, buttons, etc.)
+-- Random button, make new team link, drop down menus, nba link, github link, make new team form
+Should have at least 3 main features
+-- Random button, drop down links, make new team
+
+Includes styling
+-- public/styles.css
+Connects to a server and makes requests from the front end (express and axios)
+-- server/index.js
+2-3 minute presentation
+
+Checklist
+Overview
+Remember: you do not have to include every single item! 14 is the minimum.
+
+The required items are starred.
+
+Planning
+project includes a wireframe for each view
+-- planning/desktop - 1,2,3.png
+project includes a list of MVP features *
+-- this text file
+project includes a data model
+
+MVP
+app has at least 3 main features *
+-- Random button, make new team, drop down directories
+front end makes a request to the server and handles the response *
+-- server/index.js
+front end is interactive *
+-- Random button, make new team link, drop down menus, nba link, github link, make new team form
+app has custom styling *
+-- public/styles.css
+Front End
+app has at least 5 semantic tags *
+-- <header>, <footer>, <nav>, <main>, <section> all in public/landing.html and public/teamMaker.html
+app includes 1 view *
+-- public/landing.html
+app includes 1+ additional view(s)
+-- public/teamMaker.html
+styling includes flexbox
+-- Used in #form in public/styles.css
+at least 1 view is responsive
+-- CANNOT FIGURE IT OUT
+styling includes animations
+-- Not that advanced, YET. I did try, though.
+Server
+app includes a GET endpoint and handler function *
+-- random button used GET
+app includes a POST endpoint and handler function *
+-- making team will have
+app includes a PUT endpoint and handler function
+-- making team will have
+app includes a DELETE endpoint and handler function
+-- making team will have
+app utilizes Sequelize
+
+project includes at least 1 controller file
+
+Database
+project includes a seed file or function
+
+app uses 1 table
+
+app uses 1+ additional tables
+
+app uses a foreign key and join
+
+Presentation
+discusses project purpose and demonstrates MVP *
+
+does not discuss broken/unimplemented features
+
+recording is between 2-3 minutes
+
+Instructions
+Planning
+It’s difficult to plan a software project the first few times. Your plans will not be perfect, and that’s okay. Try to make your plan as comprehensive as you can – it will help you throughout the process. And don’t be afraid to update your plan as you go.
+
+Start out brainstorming - look through projects we’ve done and read through the ideas at the bottom of this page.
+
+List out your 3+ MVP (minimum viable product) features. Name your project.
+
+Wireframe your page(s).
+
+Make a to do list for coding. It’s okay if this isn’t comprehensive, just try to give yourself a little structure.
+
+When you have your features, app name, wireframe(s), and to do list, pass off your plan with a staff member.
+
+Make adjustments if needed.
+
+Set up a folder on your computer and a remote repo on GitHub. Connect them. Upload your completed planning documentation to your repo.
+
+Coding
+You can choose how you want to do this, but here’s a suggested work flow if you’re feeling stuck:
+
+Start by creating HTML, CSS, and JS files and linking them together for the front end.
+
+Set up a basic server for your back end.
+
+Build the HTML for your first feature.
+
+Write the JavaScript for your first feature (front and back).
+
+Add in CSS for that section of the page.
+
+Repeat the process for your other 2 features.
+
+Polish the layout and styling of the page.
+
+Add any additional features.

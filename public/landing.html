@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NBA Team Generator | Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
 </head>
 <body>
+  <wrapper>
     <header>
         <h1>
             NBA Basketball Team Generator
@@ -34,7 +36,8 @@
                           <a href="https://www.nba.com/sixers/" target="_blank" style="background-color: #006BB6; color: white;">Philadelphia 76ers</a>
                           <a href="https://www.nba.com/raptors/" target="_blank" style="background-color: #CE1141; color: white;">Toronto Raptors</a>
                           <a href="https://www.nba.com/wizards/" target="_blank" style="background-color: #002B5C; color: white;">Washington Wizards</a>
-                        </li></ul>
+                        </li>
+                    </ul>
                       <ul class="dropdown2">
                         <button onclick="dropDwnBtn()" class="westernDropbtn">Western Teams</button>
                         <li id="myDropDown2" class="dropdown-content2">
@@ -55,7 +58,7 @@
                           <a href="https://www.nba.com/jazz/" target="_blank" style="background-color: #002B5C; color: white;">Utah Jazz</a>
                         </li>
                       </ul>
-                    <a class="navBar" id="navBtns" href="http://127.0.0.1:5501/public/teamMaker.html">Make Your Own Team</a>
+                    <a class="navBar" id="navBtns" href="/public/teamMaker.html">Make Your Own Team</a>
                 </div>
               
             <a href="https://www.github.com" target="_blank">
@@ -66,7 +69,7 @@
     </header>
     <main class="frontPageParagraph">
       <p>
-        Welcome to my NBA team generator page! The different things you can do are head to the make your own team page to do just that! You can tell where your team is from, what the name of your team is as well as even add a logo! If you're uncreative like myself, you can have the system generate a random NBA team that you can bandwagon! Lastly, you can take you're new team and hover over the Eastern or Western tabs to visit the website of the team you just got assigned or click on the logo of your new team and piss all your friends off with the copious amount of random knowledge that you learned! Click the NBA logo to get an overview of the whole league and the GitHub link to view my GitHub!
+        Welcome to my NBA team generator page! The different things you can do are head to the make your own team page to do just that! You can tell where your team is from, what the name of your team is as well as even add a logo! If you're uncreative like myself, you can have the system generate a random NBA team that you can bandwagon! Lastly, you can take you're new team and hover over the Eastern or Western tabs to visit the website of the team you just got assigned or click on the logo of your new team and piss all your friends off with the copious amount of random knowledge that you learned! Click the NBA logo to get an overview of the whole league!
       </p>
     </main>
     <main>
@@ -90,9 +93,9 @@
     </script>
     </main>
     <footer>
-
+      <div id="footer1"></div>
     </footer>
-
+  </wrapper>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/server/index.js"></script>
 </body>

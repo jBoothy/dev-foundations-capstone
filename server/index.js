@@ -1,10 +1,10 @@
-const express = require('express')
-const cors = require('cors')
-const path = require('path')
+const express = require('express');
+const cors = require('cors');
+const path = require('path');
+const app = express();
+app.use(express.json());
+app.use(cors());
 
-const app = express()
-
-app.use(cors())
 // --------------------------------------------------------------------
 
 // Team Randomizer
@@ -169,6 +169,7 @@ app.get("/api/teams", (req, res)=>{
     console.log(randomTeam)
     res.status(200).send(randomTeam)
 })
+
 // -----------------------------------------------------------------------
 
 
@@ -176,30 +177,13 @@ app.get("/api/teams", (req, res)=>{
 // -----------------------------------------------------------------------
 
 // Team Creator
-// function createNewTeam(event) {
-//     event.preventDefault()
-  
-//     clearCharacters()
-  
-//     let body = {
-//       cityState: newCityStateInput.value, 
-//       teamName: newTeamNameInput.value, 
-//       logoURL: newLogoURL.value
-//     }
-  
-//     axios.post(`${baseURL}/character`, body) 
-//       .then(function(res) {
-//         for (let i = 0; i < res.data.length; i++) {
-//           createTeamCard(res.data[i])
-//         }
-//       })
-    
-//     newCityStateInput.value = ''
-//     newTeamNameInput.value = ''
-//     newLogoURL.value = ''
-//   }
+const {getTeams, deleteTeam, createTeam, updateTeam} = require('./controller')
 
-// createForm.addEventListener('submit', createNewTeam)
+app.get(`/api/teams`, getTeams)
+app.delete(`/api/teams/:id`, deleteTeam)
+app.post(`/api/teams`, createTeam)
+app.put(`/api/teams/:id`, updateTeam)
+
 // -------------------------------------------------------------------------
 
 app.get('/', (req, res)=>{
