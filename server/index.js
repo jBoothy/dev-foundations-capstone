@@ -167,11 +167,12 @@ const values = Object.values(teams)
 
 app.get("/api/teams", (req, res)=>{
     const randomTeam = values[Math.floor(Math.random()*values.length)]
-    console.log(randomTeam)
+    // console.log(randomTeam)
     res.status(200).send(randomTeam)
 })
 
 // -----------------------------------------------------------------------
+// Theme Changer
 
 
 

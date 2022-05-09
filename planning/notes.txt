@@ -1,4 +1,4 @@
 Notes for next steps:
 
 
-fix + button on created team card.
+add login function if enough time
