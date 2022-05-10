@@ -24,4 +24,4 @@ This is my capstone project for foundations at DevMountain.
 <br>
 <h3>Presentation</h3>
 <h2>Check out the demo video here:</h2>
-https://youtu.be/AyKQvBb3iVs
+https://www.youtube.com/watch?v=waMNN4FLzDg
