@@ -52,13 +52,13 @@ styling includes animations
 -- Not that advanced, YET. I did try, though.
 Server
 app includes a GET endpoint and handler function *
--- random button used GET
+-- random button uses GET
 app includes a POST endpoint and handler function *
--- making team will have
+-- making team uses have
 app includes a PUT endpoint and handler function
--- making team will have
+-- making team uses have
 app includes a DELETE endpoint and handler function
--- making team will have
+-- making team uses have
 app utilizes Sequelize
 
 project includes at least 1 controller file
